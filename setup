@@ -4,6 +4,17 @@ Choose Terminal(Admin) to open Windows powershell windows, Click Yes
 cd ..
 // C:\Users
 git clone https://github.com/Nitin-Sarangdhar/AIPC_Workshop.git
+cd AIPC_Workshop
+// C:\Users\AIPC_Workshop
+move devcloud ..
+// If C:\Users\devcloud directory already exists following optional steps may be required
+// cd devcloud
+// move Semix ../..
+//// If C:\Users\devcloud\SemiX directory already exists following optional steps may be required
+//// rmdir -Recurse -Force ../devcloud/SemiX
+//// move SemiX ../..
+cd ..
+// The following structure will be present under devcloud
 // C:\Users\devcloud
 //   -----readme
 // C:\Users\devcloud\SemiX
@@ -20,9 +31,58 @@ git clone https://github.com/Nitin-Sarangdhar/AIPC_Workshop.git
 //   ------resnet50.bin.part2
 //   ------resnet50.bin.part3
 //   ------resnet50.xml
-// C:\Users\devcloud\SemiX\yolov5
+// C:\Users\devcloud\SemiX\yolo
 //   ------best_model.onnx
-// C:\Users\devcloud\SemiX\yolov5\images
+// C:\Users\devcloud\SemiX\yolo\images
 //   ------BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg
 // C:\Users\devcloud\SemiX\yolov5\videos
 //   -------traffic_video.mp4
+rmdir -Recurse -Force AIPC_Workshop
+cd devcloud
+// C:/Users/devcloud
+cd SemiX
+// C:/Users/devcloud/SemiX
+pip install opencv-python
+pip install openvino
+pip install openvino-dev
+pip install onnx
+pip install ultralytics
+git clone https://github.com/ultralytics/yolov5.git
+cd resent50_openvino
+// C:/Users/devcloud/SemiX/resnet50_openvino
+..\split_file.py merge "resnet50.bin"
+// resnet50.bin will appear in the current directory
+cd ..
+// C:/Users/devcloud/SemiX
+python Openvino_actual_test.py
+// Script successfuly completes
+python -m idlelib
+// idle window appears. This is the execution environment
+File>Open>Openvino_dog2
+// Openvino_gog2.py opens in a new window
+Run>Run Module
+// Script runs in Idle window. An image of a golden retriver will appear
+Close the image window.
+// The script will stop running
+File>OPen>Openvino_yolov5
+// Openvino_yolov5.py opens in a new window
+Run>Run Module
+// Script runs in Idle window. It will detect helmet in the image
+File>Open>Openvino_yolov5_10
+// Openvino_yolov5_10.py opens in a new window
+Run>Run Module
+// Helmet detection runs on CPU, GPU and NPU 10 times displaying average run time
+File>Open>Openvino_yolov5_videotime
+// Openvino_yolov5_videotime.py appears in a new window
+Run>Run Module
+// Helmet Detection video will run and the script will stop after some time
+Go back to IDLE shell 
+File>save>output (text.type)>Save
+// output.txt will be saved in current directory
+Close all Idle and open python file windows and exit out of idle
+Output ia available in output.txt and directories deteted_images detected_media
+
+
+
+
+
