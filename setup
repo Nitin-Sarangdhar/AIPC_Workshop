@@ -1,0 +1,28 @@
+Rightclick windows icon
+Choose Terminal(Admin) to open Windows powershell windows, Click Yes
+// C:\Users\xxx in the Powershell prompt window where xxx is your username
+cd ..
+// C:\Users
+git clone https://github.com/Nitin-Sarangdhar/AIPC_Workshop.git
+// C:\Users\devcloud
+//   -----readme
+// C:\Users\devcloud\SemiX
+//   ----- readme
+//   ------dog.jpg
+//   ------Openvino_actual_test.py
+//   ------Openvino_dog2.py
+//   ------Openvino_yolov5.py
+//   ------Openvino_yolov5_10.py
+//   ------Openvino_yolov5_videotime.py
+//   ------split_file.py
+// C:\Users\devcloud\SemiX\resnet50_openvino
+//   ------resnet50.bin.part1
+//   ------resnet50.bin.part2
+//   ------resnet50.bin.part3
+//   ------resnet50.xml
+// C:\Users\devcloud\SemiX\yolov5
+//   ------best_model.onnx
+// C:\Users\devcloud\SemiX\yolov5\images
+//   ------BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg
+// C:\Users\devcloud\SemiX\yolov5\videos
+//   -------traffic_video.mp4
