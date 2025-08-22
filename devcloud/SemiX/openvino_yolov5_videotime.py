@@ -326,9 +326,9 @@ def run_detection_on_input(input_path, model_xml_path, device="AUTO", output_dir
 # Test with a specific image and pre-converted model
 if __name__ == "__main__":
     # --- Configuration ---
-    image_to_process = r"C:\Users\devcloud\SemiX\yolov5\images\BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
+    image_to_process = r"C:\Users\devcloud\SemiX\yolo\images\BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
     # To process a video, change this path to your video file.
-    video_to_process = r"C:\Users\devcloud\SemiX\yolov5\videos\traffic_video.mp4"
+    video_to_process = r"C:\Users\devcloud\SemiX\yolo\videos\traffic_video.mp4"
     
     openvino_model_dir = r"C:\Users\devcloud\SemiX\yolov5\openvino_model"
     openvino_xml_path = os.path.join(openvino_model_dir, "best_model.xml")
@@ -350,3 +350,4 @@ if __name__ == "__main__":
     else:
         print(f"Video file not found: {video_to_process}. Skipping video detection.")
         print("Please provide a valid path to a video file to test this functionality.")
+
