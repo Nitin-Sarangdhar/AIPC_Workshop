@@ -316,12 +316,12 @@ def simple_helmet_detection(image_path, onnx_model_path, openvino_model_dir, dev
 # Test with a specific image and ONNX model
 if __name__ == "__main__":
     # --- IMPORTANT: Adjust these paths to your actual file locations ---
-    image_to_process = r"C:\Users\devcloud\SemiX\yolov5\images\BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
+    image_to_process = r"C:\Users\devcloud\SemiX\yolo\images\BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
     
     # Path to your ONNX model file.
     # Make sure this ONNX model is exported with the correct input shape (1,3,640,640)
     # and preferably with `export.py --include onnx --simplify` for best OpenVINO compatibility.
-    onnx_model_path = r"C:\Users\devcloud\SemiX\yolov5\best_model.onnx"
+    onnx_model_path = r"C:\Users\devcloud\SemiX\yolo\best_model.onnx"
     
     # Directory where you want to save the OpenVINO XML and BIN files
     openvino_output_directory = r"C:\Users\devcloud\SemiX\yolov5\openvino_model"
@@ -336,3 +336,4 @@ if __name__ == "__main__":
         device=device_to_use, 
         output_dir=output_directory_for_images
     )
+
