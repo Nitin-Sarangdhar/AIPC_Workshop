@@ -345,11 +345,11 @@ def simple_helmet_detection_and_benchmark(image_path, onnx_model_path, openvino_
 # Test with a specific image and ONNX model
 if __name__ == "__main__":
     # --- IMPORTANT: Adjust these paths to your actual file locations ---
-    image_to_process = r"C:\Users\devcloud\SemiX\yolo\images\BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
+    image_to_process = "yolo/images/BikesHelmets85_png.rf.e7f00d719d549719bfbdb12d6b373433.jpg"
     
-    onnx_model_path = r"C:\Users\devcloud\SemiX\yolo\best_model.onnx"
+    onnx_model_path = "yolo/best_model.onnx"
     
-    openvino_output_directory = r"C:\Users\devcloud\SemiX\yolov5\openvino_model"
+    openvino_output_directory = "yolov5/openvino_model"
     
     # These are now passed to the main function, no longer global
     # device_to_use = "AUTO" 
@@ -363,4 +363,5 @@ if __name__ == "__main__":
         NUM_INFERENCE_RUNS,   # Use the global number of runs
         output_dir=output_directory_for_images
     )
+
 
