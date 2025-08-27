@@ -1,4 +1,4 @@
-Rightclick windows icon
+Right Click windows icon
 Choose Terminal(Admin) to open Windows powershell windows, Click Yes
 winget install --id Git.Git -e --source winget
 // install git on PC
@@ -23,7 +23,7 @@ git clone https://github.com/Nitin-Sarangdhar/AIPC_Workshop.git
 //   ----- readme
 //   ------dog.jpg
 //   ------Openvino_actual_test.py
-//   ------Openvino_dog2.py
+//   ------Openvino_dog3.py
 //   ------Openvino_yolov5.py
 //   ------Openvino_yolov5_10.py
 //   ------Openvino_yolov5_videotime.py
@@ -59,19 +59,19 @@ git clone https://github.com/ultralytics/yolov5.git
 split_file.py merge "resnet50_openvino\resnet50.bin"
 // C:/Users/xxx/AIPC_Workshop/devcloud/SemiX/resnet50_openvino/resnet50.bin is created
 python Openvino_actual_test.py
-// Script successfuly completes
+// Script successfully completes
 python -m idlelib
-// idle window appears. This is the execution environment
+// idle window appears. This is an interactive python execution environment
 File>Open>Openvino_dog3
 // Openvino_dog3.py opens in a new window
 Run>Run Module
-// Script runs in Idle window. An image of a golden retriver will appear
+// Script runs in the Idle window. An image of a golden retriver will appear
 Close the image window.
 // The script will stop running
 File>Open>Openvino_yolov5
 // Openvino_yolov5.py opens in a new window
 Run>Run Module
-// Script runs in Idle window. It will detect helmet in the image
+// Script runs in the Idle window. It will detect helmet in the image
 File>Open>Openvino_yolov5_10
 // Openvino_yolov5_10.py opens in a new window
 Run>Run Module
@@ -80,10 +80,10 @@ File>Open>Openvino_yolov5_videotime
 // Openvino_yolov5_videotime.py appears in a new window
 Run>Run Module
 // Helmet Detection video will run and the script will stop after some time
-Go back to IDLE shell 
+Go back to IDLE window 
 File>save>output (text.type)>Save
-// output.txt will be saved in current directory
-Close all Idle and open python file windows and exit out of idle
+// output.txt will be saved in the current directory
+Close the Idle and all open python file windows and exit out of idle
 Output ia available in output.txt and directories deteted_images detected_media
 
 
