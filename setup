@@ -10,7 +10,8 @@ winget install Python.Python.3.11
 python --version
 // python 3.11.9
 // C:\Users\xxx in the Powershell prompt window where xxx is your username
-// The remanining script assumes that you perform the next steps in the next steps 
+// The remanining script assumes that you perform the next steps in the next steps
+// Remove-Item -Path "AIPC_Workshop" -Recurse -Force
 git clone https://github.com/Nitin-Sarangdhar/AIPC_Workshop.git
 // The following structure will be present under C:\Users\xxx
 // C:\Users\xxx\AIPC_Workshop
