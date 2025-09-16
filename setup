@@ -56,7 +56,7 @@ pip install openvino-dev
 pip install onnx
 pip install ultralytics
 git clone https://github.com/ultralytics/yolov5.git
-split_file.py merge "resnet50_openvino\resnet50.bin"
+.\split_file.py merge "resnet50_openvino\resnet50.bin"
 // C:/Users/xxx/AIPC_Workshop/devcloud/SemiX/resnet50_openvino/resnet50.bin is created
 python Openvino_actual_test.py
 // Script successfully completes
@@ -81,8 +81,14 @@ File>Open>Openvino_yolov5_videotime
 Run>Run Module
 // Helmet Detection video will run and the script will stop after some time
 Go back to IDLE window 
+File>Open>Openvino_yolov5_videolive
+// Openvino_yolov5_videolive.py appears in a new window
+Run>Run Module
+// Helmet Detection video will run and the script will stop after some time
+Go back to IDLE window 
 File>save>output (text.type)>Save
 // output.txt will be saved in the current directory
+
 Close the Idle and all open python file windows and exit out of idle
 Output ia available in output.txt and directories deteted_images detected_media
 
