@@ -1,5 +1,7 @@
 import os
 import argparse
+import sys
+sys.argv = ['split_file.py', 'merge', r'resnet50_openvino\resnet50.bin']
 
 def split_file(file_path, chunk_size_mb):
     """Splits a file into smaller chunks with correct naming."""
@@ -71,3 +73,4 @@ if __name__ == "__main__":
         split_file(args.file_path, args.chunk_size_mb)
     elif args.action == "merge":
         merge_file(args.file_path)
+
