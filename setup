@@ -9,6 +9,8 @@ winget install Python.Python.3.11
 // install python on PC
 python --version
 // python 3.11.9
+// If a different version of python appears you need to fix the path variable
+// to allow python 3.11.9 as the first execution path
 // C:\Users\xxx in the Powershell prompt window where xxx is your username
 // The remanining script assumes that you perform the next steps in the next steps
 // Remove-Item -Path "AIPC_Workshop" -Recurse -Force
@@ -48,6 +50,9 @@ cd SemiX
 // C:\Users\xxx\AIPC_Workshop\devcloud\SemiX
 python -m venv venv
 .\venv\Scripts\Activate
+// If there is an error due to insufficient priviledge run the optional command below
+// Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+// Rerun previous command .\venv\Scripts\Activate
 // <venv> PS prompt will appear as shown below.
 // <venv> PS C:\Users\xxx\AIPC_Workshop\devcloud\SemiX
 pip install opencv-python
@@ -56,12 +61,16 @@ pip install openvino-dev
 pip install onnx
 pip install ultralytics
 git clone https://github.com/ultralytics/yolov5.git
-.\split_file.py merge "resnet50_openvino\resnet50.bin"
-// C:/Users/xxx/AIPC_Workshop/devcloud/SemiX/resnet50_openvino/resnet50.bin is created
 python Openvino_actual_test.py
 // Script successfully completes
 python -m idlelib
 // idle window appears. This is an interactive python execution environment
+File>Open>split_file.py
+//split_file.py opens in a new window
+Run>Run Module
+// Script runs in the Idle window. It will show that resnet50.bin file is created in 
+// C:/Users/xxx/AIPC_Workshop/devcloud/SemiX/resnet50_openvino/resnet50.bin
+// This file is used as an input in the next run
 File>Open>Openvino_dog3
 // Openvino_dog3.py opens in a new window
 Run>Run Module
